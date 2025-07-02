@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+
+.nav {
+    margin-bottom: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.input-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-section input {
+    padding: 10px;
+    width: 200px;
+    margin: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.array-display {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.algorithms-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.algorithm-box {
+    width: 200px;
+    height: 120px;
+    background-color: #fff;
+    border: 3px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.algorithm-box:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.algorithm-box h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.algorithm-box p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.steps-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.step {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007bff;
+    font-family: monospace;
+}
+
+#finalResult {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d1ecf1;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tree-display {
+    text-align: center;
+    margin: 20px 0;
+    font-family: monospace;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.algorithm-summary {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e7f3ff;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.algorithm-summary h4 {
+    margin-top: 0;
+    color: #004085;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.algorithm-summary p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.algorithm-summary strong {
+    color: #495057;
+}

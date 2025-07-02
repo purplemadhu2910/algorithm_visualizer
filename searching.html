@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching Algorithms Visualizer</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Home</a>
+    </div>
+    
+    <h1>SEARCHING ALGORITHMS VISUALIZER</h1>
+    
+    <div class="input-section">
+        <label for="arrayInput">Enter array (comma-separated numbers):</label>
+        <input type="text" id="arrayInput" placeholder="e.g., 10,20,30,40,50,60,70">
+        <input type="number" id="targetInput" placeholder="Target value">
+        <button onclick="setArray()">Set Array & Target</button>
+    </div>
+
+    <div class="array-display">
+        <h3>Current Array: <span id="currentArray">[]</span></h3>
+        <h3>Target: <span id="currentTarget">-</span></h3>
+    </div>
+
+    <div class="algorithms-container">
+        <div class="algorithm-box" onclick="startSearch('linear')">
+            <h3>Linear Search</h3>
+            <p>Search sequentially through each element</p>
+        </div>
+        
+        <div class="algorithm-box" onclick="startSearch('binary')">
+            <h3>Binary Search</h3>
+            <p>Search in sorted array by dividing in half</p>
+        </div>
+        
+        <div class="algorithm-box" onclick="startSearch('bfs')">
+            <h3>Breadth First Search</h3>
+            <p>Search level by level in tree/graph</p>
+        </div>
+        
+        <div class="algorithm-box" onclick="startSearch('dfs')">
+            <h3>Depth First Search</h3>
+            <p>Search deep into branches first</p>
+        </div>
+    </div>
+
+    <div class="steps-container">
+        <h3>Search Steps:</h3>
+        <div id="steps"></div>
+        <div id="finalResult"></div>
+    </div>
+
+    <script src="search.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms Visualizer</title>
+    <link rel="stylesheet" href="sort.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">← Back to Home</a>
+    </div>
+    
+    <h1>SORTING ALGORITHMS VISUALIZER</h1>
+    
+    <div class="input-section">
+        <label for="arrayInput">Enter array (comma-separated numbers):</label>
+        <input type="text" id="arrayInput" placeholder="e.g., 64,34,25,12,22,11,90">
+        <button onclick="setArray()">Set Array</button>
+    </div>
+
+    <div class="array-display">
+        <h3>Current Array: <span id="currentArray">[]</span></h3>
+    </div>
+
+    <div class="algorithms-container">
+        <div class="algorithm-box" onclick="startSort('bubble')">
+            <h3>Bubble Sort</h3>
+            <p>Compare adjacent elements and swap if needed</p>
+        </div>
+        
+        <div class="algorithm-box" onclick="startSort('selection')">
+            <h3>Selection Sort</h3>
+            <p>Find minimum element and place at beginning</p>
+        </div>
+        
+        <div class="algorithm-box" onclick="startSort('insertion')">
+            <h3>Insertion Sort</h3>
+            <p>Insert each element in its correct position</p>
+        </div>
+        
+        <div class="algorithm-box" onclick="startSort('quick')">
+            <h3>Quick Sort</h3>
+            <p>Divide and conquer using pivot element</p>
+        </div>
+        
+        <div class="algorithm-box" onclick="startSort('merge')">
+            <h3>Merge Sort</h3>
+            <p>Divide array and merge sorted halves</p>
+        </div>
+    </div>
+
+    <div class="steps-container">
+        <h3>Sorting Steps:</h3>
+        <div id="steps"></div>
+        <div id="finalResult"></div>
+    </div>
+
+    <script src="sort.js"></script>
+</body>
+</html>
